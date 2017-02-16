@@ -28,7 +28,7 @@ import org.ini4j.Ini;
  */
 public class CsvImporter implements Importer {
 
-    private final static Logger LOGGER = Logger.getLogger(KanbanReporter.class.getName());
+    private static final  Logger LOGGER = Logger.getLogger(KanbanReporter.class.getName());
 
     private static final String REGEX_SPLIT_WHITESPACES = "\\s+";
     private static final String OPT_COLUMNS = "columns";

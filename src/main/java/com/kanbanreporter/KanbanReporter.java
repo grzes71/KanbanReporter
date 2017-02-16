@@ -18,7 +18,7 @@ import com.kanbanreporter.reporter.TemplateReporter;
  */
 public class KanbanReporter {
 
-    private final static Logger LOGGER = Logger.getLogger(KanbanReporter.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(KanbanReporter.class.getName());
 
     private KanbanReporter() {
 		super();

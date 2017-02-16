@@ -26,13 +26,12 @@ import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
  */
 public class TemplateReporter implements Reporter {
 
-    private final static Logger LOGGER = Logger.getLogger(TemplateReporter.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(TemplateReporter.class.getName());
 
     private static final String FILE_ENCODING = "UTF-8";
     private static final String DATE_FORMAT = "dd-MM-yyyy";
     private static final String TEMPLATE_HTML = "template.html";
 
-    private final String templateName;
     private final String outputFile;
 
     /**
@@ -41,7 +40,6 @@ public class TemplateReporter implements Reporter {
      * @param outputFile output file path
      */
     public TemplateReporter(String templateName, String outputFile) {
-        this.templateName = templateName;
         this.outputFile = outputFile;
     }
 
