@@ -1,21 +1,16 @@
 package com.kanbanreporter;
 
-import com.kanbanreporter.importer.CsvImporter;
-import com.kanbanreporter.importer.Importer;
-import com.kanbanreporter.importer.ImporterException;
-import com.kanbanreporter.model.Column;
-import com.kanbanreporter.model.ColumnProperties;
-import com.kanbanreporter.model.Item;
-import com.kanbanreporter.model.ItemPropertiesBuilder;
-import com.kanbanreporter.model.Kanban;
-import com.kanbanreporter.model.KanbanProperties;
-import com.kanbanreporter.model.User;
-import com.kanbanreporter.reporter.ReportException;
-import com.kanbanreporter.reporter.Reporter;
-import com.kanbanreporter.reporter.TemplateReporter;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+
+import com.kanbanreporter.importer.CsvImporter;
+import com.kanbanreporter.importer.Importer;
+import com.kanbanreporter.importer.ImporterException;
+import com.kanbanreporter.model.Kanban;
+import com.kanbanreporter.reporter.ReportException;
+import com.kanbanreporter.reporter.Reporter;
+import com.kanbanreporter.reporter.TemplateReporter;
 
 /**
  *
