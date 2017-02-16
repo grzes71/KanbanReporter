@@ -20,7 +20,11 @@ public class KanbanReporter {
 
     private final static Logger LOGGER = Logger.getLogger(KanbanReporter.class.getName());
 
-    public static void main(String[] args) {
+    private KanbanReporter() {
+		super();
+	}
+
+	public static void main(String[] args) {
         LogManager.getLogManager().getLogger(Logger.GLOBAL_LOGGER_NAME).setLevel(Level.ALL);
         LOGGER.info("Start KanbanReporter");
 
