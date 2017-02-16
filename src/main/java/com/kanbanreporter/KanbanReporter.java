@@ -40,9 +40,9 @@ public class KanbanReporter {
 		}
 	}
 
-	private static void generateKanban(String csv_path, String output_path) throws ImporterException, ReportException {
-		Importer csv_importer = new CsvImporter(csv_path);
-		Reporter reporter = new TemplateReporter("template.html", output_path);
+	private static void generateKanban(String csvPath, String outPath) throws ImporterException, ReportException {
+		Importer csv_importer = new CsvImporter(csvPath);
+		Reporter reporter = new TemplateReporter("template.html", outPath);
 
 		Kanban kanban = csv_importer.createKanban();
 		reporter.generate(kanban);
